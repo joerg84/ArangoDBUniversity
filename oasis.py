@@ -4,6 +4,7 @@ import sys
 import time
 
 from pyArango.connection import *
+from arango import ArangoClient
 
 # retrieving credentials from ArangoDB tutorial service
 def getTempCredentials():
@@ -57,6 +58,17 @@ def connect(login):
         conn = Connection(arangoURL=url, username=login["username"], password=login["password"],)
     return conn
         
-    
+# Connect against an oasis DB and return pyarango connection
+def connect_python_arango(login):
+    url = "https://"+login["hostname"]+":"+str(login["port"])
+    database = None
+    # Initialize the ArangoDB client.
+    client = ArangoClient(hosts=url)
+    try:
+        database = client.db(login["dbName"], username=login["username"], password=login["password"])
+    except:
+        time.sleep(1)
+        database = client.db(login["dbName"], username=login["username"], password=login["password"])
+    return database   
     
     
