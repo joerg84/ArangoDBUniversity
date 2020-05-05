@@ -7,7 +7,7 @@ from pyArango.connection import *
 from arango import ArangoClient
 
 # retrieving credentials from ArangoDB tutorial service
-def getTempCredentials():
+def getTempCredentials(tutorialName=None):
     with open("creds.dat","r+") as cacheFile: 
         contents = cacheFile.readline()
         if len(contents) > 0:
@@ -35,8 +35,17 @@ def getTempCredentials():
     
         # Retrieve new credentials from Foxx Service
         print("Requesting new temp credentials.")
+        if (tutorialName is not None):
+             body = {
+            "tutorialName": tutorialName
+             }
+             requestBody = json.dumps(body)
+        else:
+            body = "{}"
+            requestBody = json.dumps(body)
+        
         url = 'https://5904e8d8a65f.arangodb.cloud:8529/_db/_system/alpha/tutorialDB'
-        x = requests.post(url, data = "{}")
+        x = requests.post(url, data = requestBody)
 
         if x.status_code != 200:
             print("Error retrieving login data.")
