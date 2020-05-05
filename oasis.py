@@ -39,13 +39,11 @@ def getTempCredentials(tutorialName=None):
              body = {
             "tutorialName": tutorialName
              }
-             requestBody = json.dumps(body)
         else:
             body = "{}"
-            requestBody = json.dumps(body)
         
         url = 'https://5904e8d8a65f.arangodb.cloud:8529/_db/_system/alpha/tutorialDB'
-        x = requests.post(url, data = requestBody)
+        x = requests.post(url, data = json.dumps(body))
 
         if x.status_code != 200:
             print("Error retrieving login data.")
