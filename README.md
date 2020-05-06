@@ -1,6 +1,6 @@
 # ArangoDB University
 
-Collection of interactive tutorials for ArangoDB.
+Collection of interactive tutorials for [ArangoDB](https://www.arangodb.com/).
 
 * [Basic AQL CRUD](https://colab.research.google.com/github/joerg84/ArangoDBUniversity/blob/master/AqlCrudTutorial.ipynb)
 
@@ -9,6 +9,8 @@ Collection of interactive tutorials for ArangoDB.
 * [AQL Join Tutorial](https://colab.research.google.com/github/joerg84/ArangoDBUniversity/blob/master/AqlJoinTutorial.ipynb)
 
 * [AQL Graph Traversal Tutorial](https://colab.research.google.com/github/joerg84/ArangoDBUniversity/blob/master/AqlTraversalTutorial.ipynb)
+
+* [AQL Geospatial Queries Tutorial](https://colab.research.google.com/github/joerg84/ArangoDBUniversity/blob/master/AqlGeospatialTutorial.ipynb)
 
 * [Upsert, Repsert, Insert](https://colab.research.google.com/github/joerg84/ArangoDBUniversity/blob/master/Upsert.ipynb)
 
