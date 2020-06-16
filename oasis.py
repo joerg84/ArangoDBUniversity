@@ -7,7 +7,7 @@ from pyArango.connection import *
 from arango import ArangoClient
 
 # retrieving credentials from ArangoDB tutorial service
-def getTempCredentials(tutorialName=None,credentialProvider="https://5904e8d8a65f.arangodb.cloud:8529/_db/_system/alpha/tutorialDB"):
+def getTempCredentials(tutorialName=None,credentialProvider="https://d383fa0b596a.arangodb.cloud:8529/_db/_system/tutorialDB/tutorialDB"):
     with open("creds.dat","r+") as cacheFile: 
         contents = cacheFile.readline()
         if len(contents) > 0:
