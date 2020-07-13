@@ -1,5 +1,8 @@
 # ArangoDB University
 
+![ArangoDB-Logo](https://www.arangodb.com/docs/assets/arangodb_logo_2016_inverted.png)
+
+
 Collection of interactive tutorials for [ArangoDB](https://www.arangodb.com/).
 
 * [Basic AQL CRUD](https://colab.research.google.com/github/joerg84/ArangoDBUniversity/blob/master/AqlCrudTutorial.ipynb)
