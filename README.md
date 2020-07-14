@@ -19,4 +19,7 @@ Collection of interactive tutorials for [ArangoDB](https://www.arangodb.com/).
 
 * [ArangoSearch](https://colab.research.google.com/github/joerg84/ArangoDBUniversity/blob/master/ArangoSearch.ipynb)
 
+* [Fuzzy Search](https://colab.research.google.com/github/joerg84/ArangoDBUniversity/blob/master/FuzzySearch.ipynb)
+
+
 
